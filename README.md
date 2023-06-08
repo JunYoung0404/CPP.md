@@ -79,3 +79,25 @@ GetDlgItemInt(IDC_EDIT1)
 ~~~
 람다함수 쇼팅 문제 제출
 
+퀵쇼트❤(기말고사 출제)
+~~~
+#include <stdio.h>
+#include <stdlib.h>
+int static cmp (const void* a, const void* b) 🧡const void* a 이부분 빈칸 출제
+{
+    if (*(int*)a > *(int*)b)      return  1;
+    else if (*(int*)a < *(int*)b) return -1;
+    else                          return  0;
+}
+void main()
+{
+    int a[] = {3, 1, 2, 5, 4};
+    int s = sizeof(a) / sizeof(int);
+    int i;
+    for (i = 0; i < s; i++) printf("%d ", a[i]);
+    printf(":정렬전\n");
+    qsort(a, s, sizeof(int), cmp);
+    for (i = 0; i < s; i++) printf("%d ", a[i]);
+    printf(":정렬후\n");
+}
+~~~
